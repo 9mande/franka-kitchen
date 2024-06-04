@@ -38,7 +38,7 @@ class FrankaRobot(PipelineEnv):
         exclude_current_positions_from_observation=True,
         **kwargs,
     ):
-        MODEL = '/root/cs470/mujoco_menagerie/franka_emika_panda/panda_nohand.xml'
+        MODEL = '../../../adept_models/franka_emika_panda/panda_nohand.xml'
         
         mj_model = mujoco.MjModel.from_xml_path(MODEL)
         mj_model.opt.solver = mujoco.mjtSolver.mjSOL_CG
